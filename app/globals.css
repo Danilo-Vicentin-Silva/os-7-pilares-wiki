@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f2dea0;
   --foreground: #171717;
   --cor01: #f2dea0;
   --cor02: #402d09;
@@ -20,7 +20,7 @@
 }
 
 body {
-  color: var(--foreground);
+  color: black;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
