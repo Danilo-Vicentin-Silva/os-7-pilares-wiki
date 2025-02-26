@@ -1,46 +1,38 @@
 import Image from "next/image"
-import { Search } from "lucide-react"
-
 const Main = () => {
   return (
-    <div className="p-10 bg-[--] min-h-screen pl-40">
-      {/* Barra de Pesquisa */}
-      <div className="flex items-center p-3 mb-6 max-w-lg focus-within:bg-white rounded-lg">
-        <Search size={20} className="text-gray-500 mr-2" />
-        <input
-          type="text"
-          placeholder="Descubra o que quiser desse universo!"
-          className="w-full outline-none bg-transparent"
-        />
-      </div>
-
+    <div className="p-10 min-h-screen pl-40">
       {/* Mensagem de Boas-vindas */}
       <div className="mb-8">
-        <h1 className="text-4xl font-semibold">Happy reading, Harvey</h1>
+        <h1 className="text-4xl font-semibold">Seja bem-vindo ao</h1>
+        <h1 className="text-3xl font-semibold">
+          incrível mundo de Os 7 Pilares
+        </h1>
         <p className="text-gray-600 mt-2 max-w-lg">
-          Wow! You've delved deep into the wizarding world's secrets. Have
-          Harry’s parents died yet? Oops, looks like you’re not there yet. Get
-          reading now!
+          Os 7 Pilares é uma triologia de livros que apresenta uma épica saga de
+          superação diante da Profecia do Mar, e uma poderosa entidade do Vazio.
         </p>
-        <button className="mt-4 bg-black text-white px-5 py-2 rounded-lg">
-          Start reading ↗
+        <button className="mt-10 mb-10 bg-[#402d09] text-[#f2dea0] px-5 py-2 rounded-3xl hover:bg-[#73551f] hover:shadow-2xl transition-shadow ease-in-out duration-300">
+          <a href="https://a.co/d/ccA8o18" target="_blank">
+            Adquira o seu livro ou ebook! ↗
+          </a>
         </button>
       </div>
 
       {/* Popular Now */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Popular Now</h2>
+        <h2 className="text-2xl font-semibold mb-4">Toda a Saga</h2>
         <div className="grid grid-cols-4 gap-4">
           {popularBooks.map((book, index) => (
-            <div key={index} className="bg-white p-3 rounded-lg shadow-md">
+            <div key={index}>
               <Image
                 src={book.image}
                 alt={book.title}
-                width={120}
+                width={220}
                 height={180}
-                className="rounded-md"
+                className="rounded-md shadow-[0px_4px_10px_#00000082]"
               />
-              <p className="text-center mt-2 text-sm">{book.title}</p>
+              <p className="mt-2 text-center">{book.title}</p>
             </div>
           ))}
         </div>
@@ -71,13 +63,11 @@ const Main = () => {
 }
 
 const popularBooks = [
-  { image: "/images/got1.jpg", title: "The World of Ice and Fire" },
+  { image: "/imagens/01-capa.webp", title: "A Jornada Além da Montanha" },
   {
-    image: "/images/fantastic-beasts.jpg",
-    title: "Fantastic Beasts Volume II",
+    image: "/imagens/em-breve.webp",
   },
-  { image: "/images/got2.jpg", title: "Game of Thrones Volume III" },
-  { image: "/images/wise-mans-fear.jpg", title: "The Wise Man’s Fear" },
+  { image: "/imagens/em-breve.webp" },
 ]
 
 export default Main

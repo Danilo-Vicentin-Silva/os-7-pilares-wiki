@@ -4,7 +4,6 @@
 
 :root {
   --background: #f2dea0;
-  --foreground: #171717;
   --cor01: #f2dea0;
   --cor02: #402d09;
   --cor03: #d9a036;
@@ -20,7 +19,7 @@
 }
 
 body {
-  color: black;
+  color: #402d09;
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
