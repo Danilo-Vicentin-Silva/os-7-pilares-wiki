@@ -41,8 +41,8 @@ export default function Aside() {
           🎯 Para quem é este livro?
         </h4>
         <p className="text-gray-700">
-          Para fãs de histórias épicas como "O Senhor dos Anéis", "As Crônicas
-          de Gelo e Fogo" e "O Nome do Vento".
+          Para fãs de histórias épicas como <q>O Senhor dos Anéis</q>,
+          <q>As Crônicas de Gelo e Fogo</q> e <q>O Nome do Vento</q>.
         </p>
 
         <br />
@@ -50,8 +50,16 @@ export default function Aside() {
         {/* Trecho Marcante */}
         <h4 className="text-lg font-semibold">📜 Trecho do livro:</h4>
         <p className="text-gray-700 italic">
-          "A jornada além da montanha não é apenas sobre vencer reis tiranos,
-          mas sobre descobrir o verdadeiro poder que há dentro de si."
+          <q>
+            É fato que: tirando vocês, TODOS da Grande Montanha querem que o
+            reinado dos doze reis, inclusive de Iseu, acabe, mas sequer querem
+            tentar impedir eles, e digamos que eles estão mais preocupados em
+            sobreviver da péssima situação que nosso rei astuto os colocou.
+            Então eu me volto para os reinos além da grande montanha, e é lá que
+            nós entramos: buscaremos possíveis aliados que podem nos ajudar
+            nessa luta, então os mesmos terão direito de receber metade do
+            tesouro de Iseu, que não é nem um pouco
+          </q>
         </p>
 
         <br />
@@ -61,7 +69,7 @@ export default function Aside() {
           href="https://a.co/d/eRoZtnP"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block bg-black text-white px-6 py-3 text-lg font-semibold rounded-md shadow-lg hover:bg-gray-800 transition-all"
+          className="inline-block bg-black text-white px-6 py-3 text-lg font-semibold rounded-md shadow-lg hover:bg-gray-800 transition-all"
         >
           📚 Adquira agora na Amazon
         </a>
