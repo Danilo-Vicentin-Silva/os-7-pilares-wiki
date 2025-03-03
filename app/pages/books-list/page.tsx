@@ -2,11 +2,11 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import Header from "../components/Header"
-import Nav from "../components/Nav"
+import Header from "../../components/Header"
+import Nav from "../../components/Nav"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import books from "../data/books"
+import books from "../../data/books"
 
 export default function BooksList() {
   const [selectedIndex, setSelectedIndex] = useState(0)

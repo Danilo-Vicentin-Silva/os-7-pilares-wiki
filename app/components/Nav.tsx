@@ -28,7 +28,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
-            href="/books-list"
+            href="/pages/books-list"
             className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
               "/books-list"
             )}`}
