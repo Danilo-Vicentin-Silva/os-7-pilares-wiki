@@ -2,8 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import Header from "../../components/Header"
-import Nav from "../../components/Nav"
 import { ChevronLeft, ChevronRight, MoveUpRight } from "lucide-react"
 import books from "../../data/books"
 import BookCard from "../../components/BookCard"
