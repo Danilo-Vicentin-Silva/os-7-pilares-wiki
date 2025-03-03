@@ -11,11 +11,28 @@ export default function BookPage({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <main className="min-h-screen p-10 flex flex-col items-center">
-        <h1 className="text-4xl font-bold mb-4">{book.title}</h1>
-        <Image src={book.image} alt={book.title} width={400} height={500} />
-        <p className="text-lg text-gray-600 mt-4">{book.description}</p>
-        <p className="text-md text-gray-700 mt-2">Páginas: {book.pages}</p>
+      {/* Imagem do Livro (esquerda) */}
+      <div className="fixed top-1/4 left-[28%]">
+        <Image
+          src={book.image}
+          alt={book.title}
+          width={180}
+          height={400}
+          className="rounded-lg"
+        />
+      </div>
+
+      {/* Seção principal do livro */}
+      <main className="fixed top-1/3 right-0 p-10 flex items-center justify-center w-full h-[80vh]">
+        {/* Seção do Livro */}
+        <div className="flex bg-[#d9a036] p-6 rounded-lg shadow-lg w-[80%] h-full">
+          {/* Informações do Livro (meio) */}
+          <div className="flex-1">
+            <h1 className="text-4xl font-bold text-white mb-4">{book.title}</h1>
+            <p className="text-lg text-white mb-4">{book.description}</p>
+            <p className="text-md text-white mb-2">Páginas: {book.pages}</p>
+          </div>
+        </div>
       </main>
     </>
   )

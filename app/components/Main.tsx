@@ -1,4 +1,6 @@
 import Image from "next/image"
+import books from "../data/books"
+
 const Main = () => {
   return (
     <div className="p-10 min-h-screen pl-40">
@@ -23,7 +25,7 @@ const Main = () => {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Toda a Saga</h2>
         <div className="flex gap-10">
-          {popularBooks.map((book, index) => (
+          {books.map((book, index) => (
             <div key={index}>
               <Image
                 src={book.image}
@@ -40,14 +42,5 @@ const Main = () => {
     </div>
   )
 }
-
-const popularBooks = [
-  { image: "/imagens/01-capa.webp", title: "A Jornada Além da Montanha" },
-  {
-    image: "/imagens/em-breve.webp",
-    title: "",
-  },
-  { image: "/imagens/em-breve.webp", title: "" },
-]
 
 export default Main
