@@ -27,7 +27,7 @@ const books: Book[] = [
     id: 3,
     title: "Em breve",
     description:
-      "Uma profecia, uma decisão, o fim ou começo de uma nova era em Genewins.",
+      "Uma profecia, uma decisão, o fim ou começo de uma nova era em Genewins. Em breve.",
     image: "/imagens/em-breve.webp",
     pages: "???",
   },

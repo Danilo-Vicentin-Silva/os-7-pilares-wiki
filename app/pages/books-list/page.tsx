@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
+import Link from "next/link"
 import Header from "../../components/Header"
 import Nav from "../../components/Nav"
-import { motion } from "framer-motion"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, MoveUpRight } from "lucide-react"
 import books from "../../data/books"
+import BookCard from "../../components/BookCard"
 
 export default function BooksList() {
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -26,11 +26,10 @@ export default function BooksList() {
 
   return (
     <>
-      <Header />
-      <Nav />
-      <main className="min-h-screen text-gray-900 p-10 ml-40 flex flex-col ">
+      <div className="fixed top-0 right-0 w-1/2 h-full bg-[#d9a036] -z-10"></div>
+      <main className="min-h-screen text-gray-900 p-10 ml-40 flex flex-col">
         {/* Botões de Navegação */}
-        <div className="absolute top-5 right-10 flex gap-4">
+        <div className="absolute top-52 right-96 flex gap-4">
           <button
             onClick={prevBook}
             className="p-2 bg-[#ffbd43] text-white rounded-full shadow-lg hover:bg-[#d9a036] transition"
@@ -47,35 +46,26 @@ export default function BooksList() {
 
         {/* Título e Descrição Dinâmicos */}
         <h1 className="text-4xl font-bold mb-2">{selectedBook.title}</h1>
-        <p className="text-lg text-gray-600 mb-6">{selectedBook.description}</p>
+        <p className="text-lg text-gray-600 mb-4">{selectedBook.description}</p>
+
+        {/* Botão "Saiba Mais" */}
+        <div className="w-fit">
+          <Link href={`/pages/books/${selectedBook.id}`}>
+            <button className="bg-[#ffbd43] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#d9a036] transition">
+              Saiba mais <MoveUpRight className="inline" />
+            </button>
+          </Link>
+        </div>
 
         {/* Galeria de Livros */}
         <div className="flex gap-20 w-full mt-10">
           {books.map((book, index) => (
-            <div key={book.id}>
-              <motion.div
-                className="cursor-pointer relative transition-transform duration-300 shadow-2xl rounded-lg"
-                onClick={() => setSelectedIndex(index)}
-                animate={{
-                  scale: selectedBook.id === book.id ? 1.1 : 1,
-                  transition: { duration: 0.3 },
-                }}
-              >
-                {/* Sombra para dar o efeito de flutuação */}
-                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] h-6 bg-black opacity-20 blur-md rounded-full"></div>
-
-                <Image
-                  src={book.image}
-                  alt={book.title}
-                  width={300}
-                  height={400}
-                  className="rounded-lg"
-                />
-              </motion.div>
-              <p className="text-center text-gray-800 font-semibold mt-10">
-                {book.title}
-              </p>
-            </div>
+            <BookCard
+              key={book.id}
+              book={book}
+              isSelected={selectedBook.id === book.id}
+              onClick={() => setSelectedIndex(index)}
+            />
           ))}
         </div>
 

@@ -30,7 +30,7 @@ const Nav = () => {
           <Link
             href="/pages/books-list"
             className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
-              "/books-list"
+              "/pages/books-list"
             )}`}
           >
             <LibraryBig className="text-[#402d09]" size={30} />{" "}
