@@ -6,32 +6,7 @@ import Header from "../components/Header"
 import Nav from "../components/Nav"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-
-const books = [
-  {
-    id: 1,
-    title: "Os 7 Pilares: A Jornada Além da Montanha",
-    description:
-      "Uma jornada épica por um mundo de fantasia cheio de desafios e segredos antigos.",
-    image: "/imagens/01-capa.webp",
-    pages: 350,
-  },
-  {
-    id: 2,
-    title: "Outro Livro Exemplo",
-    description:
-      "Uma história envolvente sobre coragem e descobertas inesperadas.",
-    image: "/imagens/em-breve.webp",
-    pages: 270,
-  },
-  {
-    id: 3,
-    title: "Mais um Livro Aqui",
-    description: "Aventura, mistério e emoção em um universo incrível.",
-    image: "/imagens/em-breve.webp",
-    pages: 420,
-  },
-]
+import books from "../data/books"
 
 export default function BooksList() {
   const [selectedIndex, setSelectedIndex] = useState(0)
