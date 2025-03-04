@@ -20,7 +20,7 @@ export default function FloatingBook() {
         alt="Capa do livro Os 7 Pilares"
         width={240} // Ajuste conforme necessário
         height={360} // Ajuste conforme necessário
-        className="rounded-[0%_5%_5%_0%] shadow-[0px_4px_10px_#00000082]"
+        className="rounded-sm shadow-[0px_4px_10px_#00000082]"
       />
     </motion.div>
   )

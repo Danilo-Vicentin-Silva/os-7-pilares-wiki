@@ -32,7 +32,7 @@ const Main = () => {
                 alt={book.title}
                 width={120}
                 height={180}
-                className="rounded-[0%_10%_5%_0%] shadow-[0px_4px_10px_#00000082]"
+                className="rounded-sm shadow-[0px_4px_10px_#00000082]"
               />
               <p className="mt-2">{book.title}</p>
             </div>

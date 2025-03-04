@@ -81,8 +81,14 @@ export default function BookPage({ params }: { params: { id: string } }) {
           <div className="flex-1 flex flex-col items-end text-right">
             <h1 className="text-4xl font-bold text-[#402d09] mb-4">Editora</h1>
             <p className="mb-5">Publicação Independente na Amazon KDP</p>
+
             <h1 className="text-4xl font-bold text-[#402d09] mb-4">Idiomas</h1>
             <p className="mb-5">Português (Brasil)</p>
+
+            <h1 className="text-4xl font-bold text-[#402d09] mb-4">Detalhes</h1>
+            <p>{book.pages} páginas</p>
+            <p>publicado em {book.releaseDate}</p>
+            <p>ASIN: {book.ASIN}</p>
           </div>
         </div>
       </main>

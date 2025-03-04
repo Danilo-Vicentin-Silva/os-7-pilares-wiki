@@ -31,7 +31,7 @@ export default function BookCard({ book, isSelected, onClick }: BookCardProps) {
           alt={book.title}
           width={300}
           height={400}
-          className="rounded-lg"
+          className="rounded-sm"
         />
       </motion.div>
       <p className="text-center text-gray-800 font-semibold mt-10">
