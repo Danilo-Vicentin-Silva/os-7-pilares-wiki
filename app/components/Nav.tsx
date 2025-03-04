@@ -1,7 +1,7 @@
 "use client" // Este é um Client Component
 
 import Image from "next/image"
-import { Home, Info, Mail, LibraryBig } from "lucide-react" // Ícone de lista
+import { Home, LibraryBig, GalleryHorizontalEnd, User, BriefcaseBusiness } from "lucide-react" // Ícone de lista
 import Link from "next/link"
 import { usePathname } from "next/navigation" // Importando usePathname
 
@@ -39,22 +39,38 @@ const Nav = () => {
         </li>
         <li>
           <Link
-            href="/info"
+            href="https://danilo-vicentin-silva.github.io/os-7-pilares/"
+            rel="noopener noreferrer"
+            target="_blank"
             className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
               "/info"
             )}`}
           >
-            <Info className="text-[#402d09]" size={30} />
+            <GalleryHorizontalEnd className="text-[#402d09]" size={30} />
           </Link>
         </li>
         <li>
           <Link
-            href="/contact"
+            href="https://www.instagram.com/danilo_vicentin_silva/"
+            rel="noopener noreferrer"
+            target="_blank"
             className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
               "/contact"
             )}`}
           >
-            <Mail className="text-[#402d09]" size={30} />
+            <User className="text-[#402d09]" size={30} />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://portfolio-danilo-vicentin.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+              "/contact"
+            )}`}
+          >
+            <BriefcaseBusiness className="text-[#402d09]" size={30} />
           </Link>
         </li>
       </ul>

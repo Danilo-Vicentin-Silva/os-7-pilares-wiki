@@ -42,7 +42,7 @@ export default function BookPage({ params }: { params: { id: string } }) {
 
           {/* Grupo de botões (alinhados à direita) */}
           <div className="flex flex-row items-center gap-4">
-            <Link
+            {/* <Link
               href={`https://a.co/d/btg3mLB`}
               target="_blank"
               rel="nofollow"
@@ -50,7 +50,7 @@ export default function BookPage({ params }: { params: { id: string } }) {
               <button className="bg-[#402d09] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-md hover:bg-[#402d0984] transition">
                 <Users className="w-6 h-6" />
               </button>
-            </Link>
+            </Link> */}
             <ShareButton />
             <FavoriteButton />
           </div>
