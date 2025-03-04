@@ -18,6 +18,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Os 7 Pilares Wiki",
   description: "Conheça o universo de Os 7 Pilares",
+  icons: {
+    icon: [
+      { url: "/favicons/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicons/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: "/favicons/apple-touch-icon.png",
+  },
+  manifest: "/favicons/site.webmanifest",
 }
 
 export default function RootLayout({

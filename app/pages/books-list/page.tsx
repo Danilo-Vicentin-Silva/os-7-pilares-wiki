@@ -48,11 +48,20 @@ export default function BooksList() {
 
         {/* Botão "Saiba Mais" */}
         <div className="w-fit">
-          <Link href={`/pages/books/${selectedBook.id}`}>
-            <button className="bg-[#ffbd43] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#d9a036] transition">
+          {selectedIndex === 0 ? (
+            <Link href={`/pages/books/${selectedBook.id}`}>
+              <button className="bg-[#ffbd43] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#d9a036] transition">
+                Saiba mais <MoveUpRight className="inline" />
+              </button>
+            </Link>
+          ) : (
+            <button
+              disabled
+              className="bg-gray-400 text-white px-6 py-2 rounded-lg shadow-md cursor-not-allowed opacity-50"
+            >
               Saiba mais <MoveUpRight className="inline" />
             </button>
-          </Link>
+          )}
         </div>
 
         {/* Galeria de Livros */}
