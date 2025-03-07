@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div className="p-10 min-h-screen pl-40">
       {/* Mensagem de Boas-vindas */}
-      <div className="mb-8">
+      <div className="mb-2 mt-14">
         <h1 className="text-5xl font-semibold">Seja bem-vindo ao</h1>
         <h1 className="text-3xl font-semibold">
           incrível mundo de Os 7 Pilares
