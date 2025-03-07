@@ -13,7 +13,7 @@ export default function FloatingBook() {
         rotate: 2,
         transition: { duration: 0.3, ease: "easeInOut" },
       }}
-      className="fixed top-[13%] left-[48%] -translate-x-1/2 -translate-y-1/2 z-[9999]"
+      className="fixed top-[13%] left-[48%] -translate-x-1/2 -translate-y-1/2 z-[9999] max-lg:hidden"
     >
       <Image
         src="/imagens/01-capa.webp" // Substitua pelo caminho correto da imagem

@@ -1,25 +1,40 @@
-"use client" // Este é um Client Component
+"use client"
 
 import Image from "next/image"
-import { Home, LibraryBig, GalleryHorizontalEnd, User, BriefcaseBusiness } from "lucide-react" // Ícone de lista
+import {
+  Home,
+  LibraryBig,
+  GalleryHorizontalEnd,
+  User,
+  BriefcaseBusiness,
+} from "lucide-react"
 import Link from "next/link"
-import { usePathname } from "next/navigation" // Importando usePathname
+import { usePathname } from "next/navigation"
 
 const Nav = () => {
-  const pathname = usePathname() // Hook para obter a rota atual
+  const pathname = usePathname()
 
   // Função para verificar se o botão é da página atual
   const isActive = (path: string) =>
     pathname === path ? "bg-[#d9a036]" : "hover:bg-[#d9a036]"
 
   return (
-    <nav className="h-screen w-25 border-r border-[#ffbd43] text-white fixed top-0 left-0 flex flex-col items-center p-5">
-      <Image src="/imagens/logo.webp" alt="logo" width={50} height={50} />
-      <ul className="mt-32 space-y-10 w-full">
+    <nav
+      className="fixed top-0 left-0 h-screen w-24 border-r border-[#ffbd43] text-white flex flex-col items-center p-5 
+      xl:w-24 xl:h-screen xl:flex-col 
+      max-xl:w-full max-xl:h-20 max-xl:flex-row max-xl:justify-around max-xl:border-b max-xl:border-r-0 max-xl:p-3 bg-[#f2dea0] z-50"
+    >
+      {/* Logo */}
+      <div className="mb-10 max-xl:mb-0">
+        <Image src="/imagens/logo.webp" alt="logo" width={50} height={50} />
+      </div>
+
+      {/* Menu de Navegação */}
+      <ul className="flex flex-col space-y-10 xl:mt-32 max-xl:flex-row max-xl:space-y-0 max-xl:gap-6">
         <li>
           <Link
             href="/"
-            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/"
             )}`}
           >
@@ -29,12 +44,11 @@ const Nav = () => {
         <li>
           <Link
             href="/pages/books-list"
-            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/pages/books-list"
             )}`}
           >
-            <LibraryBig className="text-[#402d09]" size={30} />{" "}
-            {/* Ícone de lista */}
+            <LibraryBig className="text-[#402d09]" size={30} />
           </Link>
         </li>
         <li>
@@ -42,7 +56,7 @@ const Nav = () => {
             href="https://danilo-vicentin-silva.github.io/os-7-pilares/"
             rel="noopener noreferrer"
             target="_blank"
-            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/info"
             )}`}
           >
@@ -54,7 +68,7 @@ const Nav = () => {
             href="https://www.instagram.com/danilo_vicentin_silva/"
             rel="noopener noreferrer"
             target="_blank"
-            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/contact"
             )}`}
           >
@@ -66,7 +80,7 @@ const Nav = () => {
             href="https://portfolio-danilo-vicentin.vercel.app/"
             rel="noopener noreferrer"
             target="_blank"
-            className={`flex items-center justify-center gap-3 p-2 rounded cursor-pointer ${isActive(
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/contact"
             )}`}
           >
