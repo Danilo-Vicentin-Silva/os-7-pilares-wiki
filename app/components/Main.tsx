@@ -3,13 +3,13 @@ import books from "../data/books"
 
 const Main = () => {
   return (
-    <div className="p-10 min-h-screen pl-40 pr-10 flex flex-col gap-12 max-xl:p-8">
+    <div className="p-10 min-h-screen pl-40 pr-10 flex flex-col gap-12 max-lg:p-8">
       {/* Mensagem de Boas-vindas */}
       <div className="mt-14 text-left max-[1750px]:text-center">
-        <h1 className="text-5xl font-semibold max-xl:text-4xl max-lg:text-3xl">
+        <h1 className="text-5xl font-semibold max-lg:text-4xl">
           Seja bem-vindo ao
         </h1>
-        <h1 className="text-3xl font-semibold max-xl:text-2xl max-lg:text-xl">
+        <h1 className="text-3xl font-semibold max-lg:text-2xl">
           incrível mundo de Os 7 Pilares
         </h1>
         <p className="text-gray-600 mt-2 max-w-lg max-[1750px]:mx-auto">
