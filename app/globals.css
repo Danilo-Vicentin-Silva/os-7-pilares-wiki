@@ -22,6 +22,7 @@ body {
   color: #402d09;
   background: var(--background);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
   overflow: hidden;
 }
 

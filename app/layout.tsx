@@ -1,19 +1,10 @@
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Vesper_Libre } from "next/font/google"
 import "./globals.css"
-import Header from "./components/Header"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
+import { Metadata } from "next"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
+const vesperLibre = Vesper_Libre({ subsets: ["latin"], weight: ["400", "700"] }) // Defina os pesos necessários
 
 export const metadata: Metadata = {
   title: "Os 7 Pilares Wiki",
@@ -35,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={vesperLibre.className}>
         <Nav />
         {children}
         <Footer />

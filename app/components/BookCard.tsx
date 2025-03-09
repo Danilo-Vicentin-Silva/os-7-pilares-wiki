@@ -29,7 +29,7 @@ export default function BookCard({ book, isSelected, onClick }: BookCardProps) {
         <Image
           src={book.image}
           alt={book.title}
-          width={300}
+          width={350}
           height={400}
           className="rounded-sm"
         />

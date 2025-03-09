@@ -41,7 +41,7 @@ const Main = () => {
                 alt={book.title}
                 width={120}
                 height={180}
-                className="rounded-sm shadow-[0px_4px_10px_#00000082]"
+                className="rounded-sm shadow-sm hover:shadow-2xl transition-shadow ease-in-out duration-300"
               />
               {/* Removido o título do livro em dispositivos menores */}
               <p className="mt-2 max-[1750px]:hidden">{book.title}</p>

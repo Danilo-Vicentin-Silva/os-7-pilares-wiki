@@ -65,9 +65,7 @@ const Nav = () => {
         </li>
         <li>
           <Link
-            href="https://www.instagram.com/danilo_vicentin_silva/"
-            rel="noopener noreferrer"
-            target="_blank"
+            href="/pages/sobre-autor"
             className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
               "/contact"
             )}`}
