@@ -20,17 +20,17 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 h-screen w-24 border-r border-[#ffbd43] text-white flex flex-col items-center p-5 
-      xl:w-24 xl:h-screen xl:flex-col 
-      max-xl:w-full max-xl:h-20 max-xl:flex-row max-xl:justify-around max-xl:border-b max-xl:border-r-0 max-xl:p-3 bg-[#f2dea0] z-50"
+      className="fixed top-0 left-0 h-screen w-24 border-r border-[#ffbd43] text-white flex flex-col items-center justify-center p-5 
+  lg:w-24 lg:h-screen lg:flex-col 
+  max-lg:w-full max-lg:h-20 max-lg:flex-row max-lg:justify-around max-lg:border-b max-lg:border-r-0 max-lg:p-3 bg-[#f2dea0] z-50"
     >
       {/* Logo */}
-      <div className="mb-10 max-xl:mb-0">
+      <div className="mb-10 max-lg:mb-0">
         <Image src="/imagens/logo.webp" alt="logo" width={50} height={50} />
       </div>
 
       {/* Menu de Navegação */}
-      <ul className="flex flex-col space-y-10 xl:mt-32 max-xl:flex-row max-xl:space-y-0 max-xl:gap-6">
+      <ul className="flex flex-col h-full items-center justify-center space-y-10 lg:mt-0 max-lg:flex-row max-lg:space-y-0 max-lg:gap-6 max-lg:w-auto">
         <li>
           <Link
             href="/"

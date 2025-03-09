@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: [
@@ -12,7 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        "max-lg": { max: "1778px" }, // Define um novo tamanho para max-lg
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config

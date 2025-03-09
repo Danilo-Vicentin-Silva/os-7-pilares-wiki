@@ -24,10 +24,10 @@ export default function BooksList() {
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-1/2 h-full bg-[#d9a036] -z-10"></div>
-      <main className="min-h-screen text-gray-900 p-10 ml-40 flex flex-col">
+      <div className="fixed top-0 right-0 w-1/2 h-full bg-[#d9a036] -z-10 max-lg:hidden"></div>
+      <main className="min-h-screen text-gray-900 p-10 ml-40 flex flex-col max-lg:ml-0 max-lg:p-5 max-lg:text-center max-lg:items-center">
         {/* Botões de Navegação */}
-        <div className="absolute top-52 right-96 flex gap-4">
+        <div className="absolute top-52 right-96 flex gap-4 max-lg:hidden">
           <button
             onClick={prevBook}
             className="p-2 bg-[#ffbd43] text-white rounded-full shadow-lg hover:bg-[#d9a036] transition"
@@ -43,8 +43,12 @@ export default function BooksList() {
         </div>
 
         {/* Título e Descrição Dinâmicos */}
-        <h1 className="text-4xl font-bold mb-2">{selectedBook.title}</h1>
-        <p className="text-lg text-gray-600 mb-4">{selectedBook.description}</p>
+        <h1 className="text-4xl font-bold mb-2 max-lg:text-2xl max-lg:pt-20">
+          {selectedBook.title}
+        </h1>
+        <p className="text-lg text-gray-600 mb-4 max-lg:text-base">
+          {selectedBook.description}
+        </p>
 
         {/* Botão "Saiba Mais" */}
         <div className="w-fit">
@@ -65,7 +69,7 @@ export default function BooksList() {
         </div>
 
         {/* Galeria de Livros */}
-        <div className="flex gap-20 w-full mt-10">
+        <div className="flex gap-20 w-full mt-10 max-lg:flex-col max-lg:gap-6 max-lg:items-center">
           {books.map((book, index) => (
             <BookCard
               key={book.id}
@@ -77,8 +81,8 @@ export default function BooksList() {
         </div>
 
         {/* Número de Páginas no Canto Inferior Direito */}
-        <div className="fixed bottom-5 right-5 bg-[#ffbd43] text-white px-4 py-2 rounded-lg shadow-lg">
-          <span className="text-lg font-semibold">
+        <div className="fixed bottom-5 right-5 bg-[#ffbd43] text-white px-4 py-2 rounded-lg shadow-lg max-lg:hidden">
+          <span className="text-lg font-semibold max-lg:text-base">
             {selectedBook.pages} páginas
           </span>
         </div>
