@@ -81,16 +81,6 @@ export default function CharactersPage() {
                   <strong>Raça:</strong> {selectedCharacter.race}
                 </p>
                 <p className="text-[#402d09] text-lg font-semibold">
-                  <strong>Idade:</strong>{" "}
-                  {selectedCharacter.age
-                    ? `${selectedCharacter.age} anos`
-                    : "Desconhecida"}
-                </p>
-                <p className="text-[#402d09] text-lg font-semibold">
-                  <strong>Altura:</strong>{" "}
-                  {selectedCharacter.height || "Desconhecida"}
-                </p>
-                <p className="text-[#402d09] text-lg font-semibold">
                   <strong>Cor dos olhos:</strong>{" "}
                   {selectedCharacter.eyeColor || "Desconhecida"}
                 </p>

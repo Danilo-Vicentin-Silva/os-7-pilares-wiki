@@ -4,8 +4,6 @@ export interface Character {
   shortDescription: string
   fullDescription: string
   race: string
-  age: number | null
-  height: string | null
   eyeColor: string | null
   abilities: string[]
 }
@@ -14,14 +12,13 @@ export const characters: Character[] = [
   {
     id: 1,
     name: "Oséias Cooper Davis",
-    shortDescription: "Principal personagem, jovem comerciante.",
+    shortDescription: "Protagonista, jovem comerciante.",
     fullDescription:
       "Oséias Cooper Davis é um jovem comerciante de cabelos curtos pretos, pele clara, pequena estatura e olhos laranjas.",
     race: "Humano",
-    age: 23,
-    height: null,
+
     eyeColor: "Laranja",
-    abilities: [],
+    abilities: ["Inteligente", "Ágil", "Estrategista", "Predestinado"],
   },
   {
     id: 2,
@@ -30,10 +27,9 @@ export const characters: Character[] = [
     fullDescription:
       "André Cooper Silvertone é ruivo, com cabelos longos, alta estatura, olhos verdes e muitas feridas.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Verde",
-    abilities: [],
+    abilities: ["Forte", "Determinado"],
   },
   {
     id: 3,
@@ -42,10 +38,9 @@ export const characters: Character[] = [
     fullDescription:
       "Jones Bellucci Davis é negro, com olhos castanhos, alta estatura e uma expressão séria.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Castanho",
-    abilities: [],
+    abilities: ["Inteligente", "Leal"],
   },
   {
     id: 4,
@@ -54,10 +49,9 @@ export const characters: Character[] = [
     fullDescription:
       "Drake Cooper Silverstone é negro, com olhos castanhos, média estatura, ótimo guerreiro e determinado. Pai de Oséias.",
     race: "Humano",
-    age: null,
-    height: "Média",
+
     eyeColor: "Castanho",
-    abilities: ["Combate corpo a corpo", "Estratégia de batalha"],
+    abilities: ["Experiênte", "Estratégista", "Forte", "Inteligênte"],
   },
   {
     id: 5,
@@ -66,10 +60,9 @@ export const characters: Character[] = [
     fullDescription:
       "Susana Antonia de Hal tem pele branca, olhos laranjas, média estatura, ótima guerreira rápida e disposta.",
     race: "Humano",
-    age: null,
-    height: "Média",
+
     eyeColor: "Laranja",
-    abilities: ["Agilidade", "Combate com espadas"],
+    abilities: ["Agilidade", "Ótima Combatente", "Imponente"],
   },
   {
     id: 6,
@@ -78,8 +71,7 @@ export const characters: Character[] = [
     fullDescription:
       "Letholdus Jones Wilson tem alta estatura, é pardo, com olhos verdes, cabelos e barbas médias.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Verde",
     abilities: ["Liderança", "Diplomacia"],
   },
@@ -90,10 +82,9 @@ export const characters: Character[] = [
     fullDescription:
       "Gabriel Mello tem alta estatura, é negro, com olhos castanhos.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Castanho",
-    abilities: [],
+    abilities: ["Cozinheiro", "Guerreiro", "Leal"],
   },
   {
     id: 8,
@@ -102,10 +93,9 @@ export const characters: Character[] = [
     fullDescription:
       "Alexandra Félix Dankworth tem média estatura, é ruiva, com olhos castanhos.",
     race: "Humano",
-    age: null,
-    height: "Média",
+
     eyeColor: "Castanho",
-    abilities: [],
+    abilities: ["Determinada", "Resiliênte", "Ótima Arqueira"],
   },
   {
     id: 9,
@@ -113,10 +103,9 @@ export const characters: Character[] = [
     shortDescription: "Média estatura, albino.",
     fullDescription: "Vinicius de Magnum tem média estatura e é albino.",
     race: "Humano",
-    age: null,
-    height: "Média",
-    eyeColor: null,
-    abilities: [],
+
+    eyeColor: "Azuis",
+    abilities: ["Explorado", "Boa memória", "Leal"],
   },
   {
     id: 10,
@@ -126,8 +115,7 @@ export const characters: Character[] = [
     fullDescription:
       "Alexa Berrycloth Copo Gastrell tem média estatura, pele branca, olhos laranjas e cabelos pretos lisos.",
     race: "Humano",
-    age: null,
-    height: "Média",
+
     eyeColor: "Laranja",
     abilities: [],
   },
@@ -139,8 +127,7 @@ export const characters: Character[] = [
     fullDescription:
       "Talion de Callhalla Ajax é um cavaleiro lendário com habilidades de vidência, alta estatura, olhos laranjas e pele negra.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Laranja",
     abilities: ["Vidência", "Combate avançado"],
   },
@@ -152,8 +139,7 @@ export const characters: Character[] = [
     fullDescription:
       "Harold de Callhalla Ajax é pai de Talion, um cavaleiro lendário com alta estatura, olhos laranjas e pele negra.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Laranja",
     abilities: ["Combate com lanças"],
   },
@@ -165,8 +151,7 @@ export const characters: Character[] = [
     fullDescription:
       "Alessandra de Callhalla Corse é mãe de Talion, com média estatura, olhos laranjas, longos cabelos pretos e pele parda.",
     race: "Humano",
-    age: null,
-    height: "Média",
+
     eyeColor: "Laranja",
     abilities: ["Curandeira"],
   },
@@ -178,8 +163,7 @@ export const characters: Character[] = [
     fullDescription:
       "Barnabás de Ajack, do reino antigo dos camponeses, é um Cavaleiro Lendário caído no Torneio. Ele tem alta estatura, pele clara, olhos laranjas, barba grande, cabelo escuro e longo, além de várias feridas e queimaduras.",
     race: "Humano",
-    age: null,
-    height: "Alta",
+
     eyeColor: "Laranja",
     abilities: ["Resistência extrema", "Combate com espadas"],
   },
