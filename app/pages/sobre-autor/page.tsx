@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function SobreAutor() {
   return (
-    <div className="min-h-screen bg-[#f2dea0] text-[#402d09]">
+    <div className="min-h-screen bg-[#f2dea0] text-[#402d09] max-lg:mt-14 max-lg:mb-14">
       <header className="text-center p-10">
         <h1 className="text-4xl font-bold mb-4">Sobre o Autor</h1>
         <p className="text-xl font-light text-gray-700 mb-4">
