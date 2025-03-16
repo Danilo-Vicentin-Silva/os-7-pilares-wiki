@@ -7,6 +7,7 @@ import {
   GalleryHorizontalEnd,
   User,
   BriefcaseBusiness,
+  Users,
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -49,6 +50,16 @@ const Nav = () => {
             )}`}
           >
             <LibraryBig className="text-[#402d09]" size={30} />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/pages/caracters"
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
+              "/pages/caracters"
+            )}`}
+          >
+            <Users className="text-[#402d09]" size={30} />
           </Link>
         </li>
         <li>
