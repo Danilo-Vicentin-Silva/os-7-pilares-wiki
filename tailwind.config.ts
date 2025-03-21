@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        "max-lg": { max: "1778px" }, // Define um novo tamanho para max-lg
+        "max-lg": { max: "1400px" }, // Define um novo tamanho para max-lg
       },
     },
   },
