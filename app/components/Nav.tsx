@@ -8,6 +8,7 @@ import {
   User,
   BriefcaseBusiness,
   Users,
+  Map,
 } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -64,14 +65,12 @@ const Nav = () => {
         </li>
         <li>
           <Link
-            href="https://danilo-vicentin-silva.github.io/os-7-pilares/"
-            rel="noopener noreferrer"
-            target="_blank"
+            href={`/pages/maps`}
             className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
-              "/info"
+              "/pages/maps"
             )}`}
           >
-            <GalleryHorizontalEnd className="text-[#402d09]" size={30} />
+            <Map className="text-[#402d09]" size={30} />
           </Link>
         </li>
         <li>
@@ -84,7 +83,21 @@ const Nav = () => {
             <User className="text-[#402d09]" size={30} />
           </Link>
         </li>
-        <li>
+        {/* Ocultar os últimos dois links em telas menores que lg */}
+        <li className="hidden lg:flex">
+          <Link
+            href="https://danilo-vicentin-silva.github.io/os-7-pilares/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className={`flex items-center justify-center p-2 rounded cursor-pointer ${isActive(
+              "/info"
+            )}`}
+          >
+            <GalleryHorizontalEnd className="text-[#402d09]" size={30} />
+          </Link>
+        </li>
+
+        <li className="hidden lg:flex">
           <Link
             href="https://portfolio-danilo-vicentin.vercel.app/"
             rel="noopener noreferrer"
