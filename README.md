@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Os 7 Pilares - A Jornada Além da Montanha
 
-## Getting Started
+Bem-vindo ao repositório do site **Os 7 Pilares**, um espaço dedicado ao universo épico da trilogia de fantasia criada por **Danilo Vicentin**. Aqui você encontrará informações sobre o mundo do livro, seus personagens, mapas, reinos e muito mais!
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌍 Sobre o Projeto
+Este site funciona como uma **wiki interativa**, permitindo que leitores e fãs mergulhem no universo do livro **Os 7 Pilares - A Jornada Além da Montanha**. Através dele, você poderá explorar:
+- 📜 **A história e ambientação**
+- 👤 **Personagens principais e suas motivações**
+- 🏰 **Os reinos e suas características**
+- 🗺️ **Mapas das regiões exploradas no livro**
+- 📚 **Informações sobre os próximos volumes**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O site foi desenvolvido utilizando **Next.js**, hospedado na **Vercel**, e estilizado seguindo uma identidade visual condizente com o mundo do livro.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tecnologias Utilizadas
+- **Next.js** (Framework React para SSR e otimização)
+- **Tailwind CSS** (Estilização rápida e responsiva)
+- **TypeScript** (Tipagem segura e manutenção facilitada)
+- **Vercel** (Hospedagem e deploy automatizado)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🗺️ Mapas Disponíveis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Atualmente, o site possui mapas interativos das seguintes regiões:
+- 🏝️ **Genewins** - Uma ilha com diversos biomas e reinos.
+- 🏙️ **Polegene** - A Grande Montanha que abriga os 12 reinos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👥 Personagens Principais
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Personagem | Descrição |
+|------------|----------------------------------------------------|
+| **Oséias** | Jovem comerciante que embarca em uma jornada para salvar os reinos da Grande Montanha |
+| **Iseu** | Tirano que governa com punho de ferro, ameaçando a liberdade dos povos |
+| **Entidade** | ??? |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📢 Contribuindo
+Caso queira contribuir com o projeto, sinta-se à vontade para abrir **issues** ou **pull requests**! Qualquer sugestão para melhorar a experiência dos leitores é bem-vinda.
+
+---
+
+## 🌟 Acesse o Site
+🔗 [Os 7 Pilares - Wiki](https://seusite.vercel.app)
+
+Se você gostou do livro, compartilhe com seus amigos e siga as redes sociais para novidades!
+
+📚 **Os 7 Pilares - A Jornada Além da Montanha** já está disponível na **Amazon**! [ADQUIRA O SEU](https://a.co/d/3kEyj8U)
+
+📧 Para contato: [danilovicentindasilva@gmail.com]
+
