@@ -48,7 +48,7 @@ Caso queira contribuir com o projeto, sinta-se à vontade para abrir **issues** 
 ---
 
 ## 🌟 Acesse o Site
-🔗 [Os 7 Pilares - Wiki](https://seusite.vercel.app)
+🔗 [Os 7 Pilares - Wiki]([https://seusite.vercel.app](https://os-7-pilares-wiki.vercel.app/))
 
 Se você gostou do livro, compartilhe com seus amigos e siga as redes sociais para novidades!
 
