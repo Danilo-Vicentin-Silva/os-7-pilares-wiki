@@ -27,7 +27,7 @@ export default function BooksList() {
       <div className="fixed top-0 right-0 w-1/2 h-full bg-[#d9a036] -z-10 max-lg:hidden"></div>
       <main className="min-h-screen text-gray-900 p-10 ml-40 flex flex-col max-lg:ml-0 max-lg:p-5 max-lg:text-center max-lg:items-center">
         {/* Botões de Navegação */}
-        <div className="absolute top-52 right-80 flex gap-4 max-lg:hidden">
+        <div className="absolute top-36 right-80 flex gap-4 max-lg:hidden">
           <button
             onClick={prevBook}
             className="p-2 bg-[#ffbd43] text-white rounded-full shadow-lg hover:bg-[#d9a036] transition"

@@ -3,9 +3,9 @@ import books from "../data/books"
 
 const Main = () => {
   return (
-    <div className="p-10 min-h-screen pl-40 pr-10 flex flex-col gap-12 max-lg:p-8">
+    <div className="p-10 min-h-screen pl-40 pr-10 flex flex-col gap-12 max-lg:p-10 max-lg:pt-16">
       {/* Mensagem de Boas-vindas */}
-      <div className="mt-14 text-left max-[1750px]:text-center">
+      <div className="mt-10 text-left max-[1750px]:text-center">
         <h1 className="text-5xl font-semibold max-lg:text-4xl">
           Seja bem-vindo ao
         </h1>
@@ -33,7 +33,7 @@ const Main = () => {
         <h2 className="text-2xl font-semibold mb-4 text-left max-[1750px]:text-center">
           Toda a Saga
         </h2>
-        <div className="flex flex-wrap gap-10 max-[1750px]:flex-row max-[1750px]:justify-center">
+        <div className="flex flex-wrap gap-20 max-[1750px]:flex-row max-[1750px]:justify-center">
           {books.map((book, index) => (
             <div key={index} className="text-left max-[1750px]:text-center">
               <Image
@@ -44,7 +44,7 @@ const Main = () => {
                 className="rounded-sm shadow-sm hover:shadow-2xl transition-shadow ease-in-out duration-300"
               />
               {/* Removido o título do livro em dispositivos menores */}
-              <p className="mt-2 max-[1750px]:hidden">{book.title}</p>
+              <p className="mt-2 text-center w-28 max-[1750px]:hidden">{book.title}</p>
             </div>
           ))}
         </div>
