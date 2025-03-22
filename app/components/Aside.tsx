@@ -7,7 +7,7 @@ export default function Aside() {
       initial={{ x: "100%", opacity: 0 }}
       animate={{ x: "0%", opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 right-0 w-[46%] h-full bg-[#d9a036] shadow-lg p-28 pt-5 flex flex-col max-lg:hidden"
+      className="fixed top-0 right-0 w-[46%] h-full bg-[#d9a036] shadow-lg p-28 pt-20 flex flex-col max-lg:hidden"
     >
       <div className="ml-14">
         <h2 className="text-5xl font-bold">Os 7 Pilares</h2>
@@ -30,8 +30,6 @@ export default function Aside() {
           </i>
         </p>
         <p className="text-gray-500 mt-2">- Danilo Vicentin da Silva, 2024</p>
-
-        <br />
 
         {/* Gênero e Público-Alvo */}
         <h4 className="text-lg font-semibold">📖 Gênero:</h4>
