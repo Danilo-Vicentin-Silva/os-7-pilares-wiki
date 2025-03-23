@@ -14,7 +14,7 @@ export const characters: Character[] = [
     name: "Oséias Cooper Davis",
     shortDescription: "Protagonista, jovem comerciante.",
     fullDescription:
-      "Oséias Cooper Davis é um jovem comerciante de cabelos curtos pretos, pele clara, pequena estatura e olhos laranjas.",
+      "Oséias Cooper Davis é um jovem comerciante de cabelos curtos pretos, branco, pequena estatura e olhos laranjas. Determinado, Oséias vai em busca de salvar a Grande Montanha e concluir a missão de seu pai, Drake.",
     race: "Humano",
 
     eyeColor: "Laranja",
@@ -25,7 +25,7 @@ export const characters: Character[] = [
     name: "André Cooper Silvertone",
     shortDescription: "Personagem ruivo, alto, olhos verdes, muitas feridas.",
     fullDescription:
-      "André Cooper Silvertone é ruivo, com cabelos longos, alta estatura, olhos verdes e muitas feridas.",
+      "André Cooper Silvertone é ruivo, com cabelos longos, alta estatura, olhos verdes e muitas feridas. Irmão de Oséias, André sempre se manteve firme na missão dada pelo seu pai, Drake.",
     race: "Humano",
 
     eyeColor: "Verde",
@@ -36,7 +36,7 @@ export const characters: Character[] = [
     name: "Jones Bellucci Davis",
     shortDescription: "Personagem sério, de alta estatura e olhos castanhos.",
     fullDescription:
-      "Jones Bellucci Davis é negro, com olhos castanhos, alta estatura e uma expressão séria.",
+      "Jones Bellucci Davis é negro, com olhos castanhos, alta estatura e uma expressão séria. Mordono de André, sempre serviu a família de Oséias.",
     race: "Humano",
 
     eyeColor: "Castanho",
@@ -47,7 +47,7 @@ export const characters: Character[] = [
     name: "Drake Cooper Silverstone",
     shortDescription: "Pai de Oséias, ótimo guerreiro e determinado.",
     fullDescription:
-      "Drake Cooper Silverstone é negro, com olhos castanhos, média estatura, ótimo guerreiro e determinado. Pai de Oséias.",
+      "Drake Cooper Silverstone é negro, com olhos castanhos, média estatura, ótimo guerreiro e determinado. Pai de Oséias. Foi um grande guerreiro no passado, e logo se tornou o símbolo da resistência contra Iseu.",
     race: "Humano",
 
     eyeColor: "Castanho",
@@ -58,7 +58,7 @@ export const characters: Character[] = [
     name: "Susana Antonia de Hal",
     shortDescription: "Ótima guerreira rápida e disposta.",
     fullDescription:
-      "Susana Antonia de Hal tem pele branca, olhos laranjas, média estatura, ótima guerreira rápida e disposta.",
+      "Susana Antonia de Hal tem olhos laranjas, é branca, média estatura, ótima guerreira rápida e disposta.",
     race: "Humano",
 
     eyeColor: "Laranja",
@@ -80,7 +80,7 @@ export const characters: Character[] = [
     name: "Gabriel Mello",
     shortDescription: "Alta estatura, negro, olhos castanhos.",
     fullDescription:
-      "Gabriel Mello tem alta estatura, é negro, com olhos castanhos.",
+      "Gabriel Mello tem alta estatura, é negro, com olhos castanhos. Amigo leal de Oséias, um ótimo cozinheiro e sempre vê o lado positivo de tudo.",
     race: "Humano",
 
     eyeColor: "Castanho",
@@ -91,7 +91,7 @@ export const characters: Character[] = [
     name: "Alexandra Félix Dankworth",
     shortDescription: "Média estatura, ruiva, olhos castanhos.",
     fullDescription:
-      "Alexandra Félix Dankworth tem média estatura, é ruiva, com olhos castanhos.",
+      "Alexandra Félix Dankworth tem média estatura, é ruiva, com olhos castanhos. Desde pequena foi obrigada a fazer escolhas difíceis, isso a tornou uma mulher forte e independente.",
     race: "Humano",
 
     eyeColor: "Castanho",
@@ -101,11 +101,12 @@ export const characters: Character[] = [
     id: 9,
     name: "Vinicius de Magnum",
     shortDescription: "Média estatura, albino.",
-    fullDescription: "Vinicius de Magnum tem média estatura e é albino.",
+    fullDescription:
+      "Vinicius de Magnum tem média estatura e é albino. Herdou a missão de explorar o mundo, assim como seus pais fizeram antes de morrerem, deixando um legado para Vinicius.",
     race: "Humano",
 
     eyeColor: "Azuis",
-    abilities: ["Explorado", "Boa memória", "Leal"],
+    abilities: ["Explorador", "Boa memória", "Leal"],
   },
   {
     id: 10,
@@ -113,11 +114,11 @@ export const characters: Character[] = [
     shortDescription:
       "Média estatura, branca, olhos laranjas. Cabelos pretos lisos.",
     fullDescription:
-      "Alexa Berrycloth Copo Gastrell tem média estatura, pele branca, olhos laranjas e cabelos pretos lisos.",
+      "Alexa Berrycloth Copo Gastrell tem média estatura, branco, olhos laranjas e cabelos pretos lisos. Sempre com um ódio, Alexa é uma ótima combatente e sempre está pronta para lutar, principalmente contra Iseu.",
     race: "Humano",
 
     eyeColor: "Laranja",
-    abilities: [],
+    abilities: ["Forte", "Perspicaz", "Ótima Combatente"],
   },
   {
     id: 11,
@@ -125,19 +126,19 @@ export const characters: Character[] = [
     shortDescription:
       "Cavaleiro lendário: vidência, alta estatura, olhos laranjas, negro.",
     fullDescription:
-      "Talion de Callhalla Ajax é um cavaleiro lendário com habilidades de vidência, alta estatura, olhos laranjas e pele negra.",
+      "Talion de Callhalla Ajax é um cavaleiro lendário com habilidades de vidência, alta estatura, negro e olhos laranjas. Treinado para ser um guerreiro desde pequeno, Talion tem a habilidade de prever perigos eminentes, ele irá em busca de impedir a Entidade.",
     race: "Cavaleiro Lendário",
 
     eyeColor: "Laranja",
-    abilities: ["Vidência", "Combate avançado"],
+    abilities: ["Vidência", "Combate avançado", "Poderoso"],
   },
   {
     id: 12,
     name: "Harold de Callhalla Ajax",
     shortDescription:
-      "Pai de Talion, cavaleiro lendário, alta estatura, olhos laranjas e pele negra.",
+      "Pai de Talion, cavaleiro lendário, alta estatura, negro e olhos laranjas.",
     fullDescription:
-      "Harold de Callhalla Ajax é pai de Talion, um cavaleiro lendário com alta estatura, olhos laranjas e pele negra.",
+      "Harold de Callhalla Ajax é pai de Talion, um cavaleiro lendário com alta estatura, olhos laranjas e negro.",
     race: "Cavaleiro Lendário",
 
     eyeColor: "Laranja",
@@ -147,9 +148,9 @@ export const characters: Character[] = [
     id: 13,
     name: "Alessandra de Callhalla Corse",
     shortDescription:
-      "Mãe de Talion, média estatura, olhos laranjas, longos cabelos pretos e pele parda.",
+      "Mãe de Talion, média estatura, olhos laranjas, longos cabelos pretos e pardo.",
     fullDescription:
-      "Alessandra de Callhalla Corse é mãe de Talion, com média estatura, olhos laranjas, longos cabelos pretos e pele parda.",
+      "Alessandra de Callhalla Corse é mãe de Talion, com média estatura, olhos laranjas, longos cabelos pretos e pardo.",
     race: "Cavaleiro Lendário",
 
     eyeColor: "Laranja",
@@ -159,9 +160,9 @@ export const characters: Character[] = [
     id: 14,
     name: "Barnabás de Ajack",
     shortDescription:
-      "Cavaleiro Lendário caído no Torneio, alta estatura, pele clara, olhos laranjas, barba grande, cabelo escuro e grande, várias feridas e queimaduras.",
+      "Cavaleiro Lendário caído no Torneio, alta estatura, branco, olhos laranjas, barba grande, cabelo escuro e grande, várias feridas e queimaduras.",
     fullDescription:
-      "Barnabás de Ajack, do reino antigo dos camponeses, é um Cavaleiro Lendário caído no Torneio. Ele tem alta estatura, pele clara, olhos laranjas, barba grande, cabelo escuro e longo, além de várias feridas e queimaduras.",
+      "Barnabás de Ajack, do reino antigo dos camponeses, é um Cavaleiro Lendário caído no Torneio. Ele tem alta estatura, branco, olhos laranjas, barba grande, cabelo escuro e longo, além de várias feridas e queimaduras.",
     race: "Cavaleiro Lendário",
 
     eyeColor: "Laranja",
@@ -172,7 +173,7 @@ export const characters: Character[] = [
     name: "Amon Matheus Wondavar",
     shortDescription: "Rei dos magos, de alta estatura e olhos laranjas.",
     fullDescription:
-      "Rei dos magos, alta estatura, pele clara, olhos laranjas, barba rala, cabelo preto curto e olhos cansados.",
+      "Rei dos magos, alta estatura, branco, olhos laranjas, barba rala, cabelo preto curto e olhos cansados.",
     race: "Humano",
     eyeColor: "Laranja",
     abilities: ["Magia poderosa", "Liderança"],
@@ -262,7 +263,7 @@ export const characters: Character[] = [
     name: "Haroldo Silverstone Hollows",
     shortDescription: "Rei dos anões, expressão de autoridade.",
     fullDescription:
-      "Rei do reino dos anões, baixa estatura, olhos verdes, cabelos e barba grisalhos e médios, pele clara, expressão de autoridade. Desfruta do Pilar para construir armas poderosas.",
+      "Rei do reino dos anões, baixa estatura, olhos verdes, cabelos e barba grisalhos e médios, branco, expressão de autoridade. Desfruta do Pilar para construir armas poderosas.",
     race: "Anão",
     eyeColor: "Verde",
     abilities: ["Engenharia de armas", "Liderança"],
@@ -334,7 +335,7 @@ export const characters: Character[] = [
     name: "Jeffrey Turner Ulric",
     shortDescription: "Sequestrador de Oséias, aparência magra e tenebrosa.",
     fullDescription:
-      "Homem de cabelos castanhos e olhos verdes, pele parda e aparência magra e tenebrosa, olhos profundos.",
+      "Homem de cabelos castanhos e olhos verdes, pardo e aparência magra e tenebrosa, olhos profundos.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Intimidação", "Astúcia"],
@@ -345,7 +346,7 @@ export const characters: Character[] = [
     shortDescription:
       "Sequestrador de Oséias, aparência forte e olhos profundos.",
     fullDescription:
-      "Homem de cabelos castanhos e olhos verdes, pele branca, aparência forte e olhos profundos.",
+      "Homem de cabelos castanhos e olhos verdes, branco, aparência forte e olhos profundos.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Força", "Liderança"],
@@ -356,7 +357,7 @@ export const characters: Character[] = [
     shortDescription:
       "Sequestrador de Oséias, aparência normal e olhos profundos.",
     fullDescription:
-      "Homem de cabelos castanhos e olhos marrons, pele parda, aparência normal e olhos profundos.",
+      "Homem de cabelos castanhos e olhos marrons, pardo, aparência normal e olhos profundos.",
     race: "Humano",
     eyeColor: "Marrom",
     abilities: ["Manipulação", "Discrição"],
@@ -367,7 +368,7 @@ export const characters: Character[] = [
     shortDescription:
       "Sequestrador de Oséias, aparência magra e olhos profundos.",
     fullDescription:
-      "Homem de cabelos castanhos e olhos verdes, pele parda, aparência magra e olhos profundos.",
+      "Homem de cabelos castanhos e olhos verdes, pardo, aparência magra e olhos profundos.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Discrição", "Enganação"],
@@ -377,7 +378,7 @@ export const characters: Character[] = [
     name: "Conrado William",
     shortDescription: "Conselheiro do rei Afonse, perspicaz e leal.",
     fullDescription:
-      "Conselheiro do rei Afonse, média estatura, pele clara e olhos e cabelos castanhos. Perspicaz e leal.",
+      "Conselheiro do rei Afonse, média estatura, branco e olhos e cabelos castanhos. Perspicaz e leal.",
     race: "Humano",
     eyeColor: "Castanho",
     abilities: ["Estratégia", "Lealdade"],
@@ -387,7 +388,7 @@ export const characters: Character[] = [
     name: "Fernanda Delphine",
     shortDescription: "Esposa do rei Afonse, atrevida e audaciosa.",
     fullDescription:
-      "Esposa do rei Afonse, média estatura, cabelos loiros brilhantes, olhos azuis e pele clara. Atrevida, audaciosa, não gosta de Iseu.",
+      "Esposa do rei Afonse, média estatura, cabelos loiros brilhantes, olhos azuis e branco. Atrevida, audaciosa, não gosta de Iseu.",
     race: "Humano",
     eyeColor: "Azul",
     abilities: ["Carisma", "Influência"],
@@ -502,7 +503,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Magnum, de alta estatura, com barba e cabelos castanhos.",
     fullDescription:
-      "Maximilian Miller Williams é o rei de Magnum, conhecido por sua alta estatura e aparência imponente. Ele é casado com Margaret Vicent Valentina e tem dois filhos, Benjamin Vicent Miller e Arthur Vicent Miller. Com pele branca, olhos verdes e uma presença régia, Maximilian é um líder respeitado e dedicado ao seu reino.",
+      "Maximilian Miller Williams é o rei de Magnum, conhecido por sua alta estatura e aparência imponente. Ele é casado com Margaret Vicent Valentina e tem dois filhos, Benjamin Vicent Miller e Arthur Vicent Miller. Tem olhos verdes e branco, Maximilian é um líder respeitado e dedicado ao seu reino.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Liderança", "Sabedoria", "Habilidade com Espada"],
@@ -512,7 +513,7 @@ export const characters: Character[] = [
     name: "Arnold Silverstone Ajax",
     shortDescription: "Pai de Talion, sábio, calmo e poderoso.",
     fullDescription:
-      "Arnold Silverstone Ajax é um homem de alta estatura e grande sabedoria. Pai de Talion, ele ocupa um alto escalão em Callhalla e é conhecido por sua calma, poder e sua habilidade estratégica. De pele branca, olhos laranjas e cabelos longos com barba média, ele é uma figura respeitada e tem um papel fundamental no destino de seu povo.",
+      "Arnold Silverstone Ajax é um homem de alta estatura e grande sabedoria. Pai de Talion, ele ocupa um alto escalão em Callhalla e é conhecido por sua calma, poder e sua habilidade estratégica. De branco, olhos laranjas e cabelos longos com barba média, ele é uma figura respeitada e tem um papel fundamental no destino de seu povo.",
     race: "Humano",
     eyeColor: "Laranja",
     abilities: ["Sabedoria", "Poder", "Estratégia"],
@@ -534,7 +535,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Hal, alta estatura, pardo, cabelos grisalhos e castanhos, olhos castanhos.",
     fullDescription:
-      "Hakon Miller Williams é o rei de Hal, um homem de alta estatura e aparência imponente. Com pele parda, cabelos grisalhos e castanhos, e olhos castanhos, ele governa seu reino com grande respeito e sabedoria.",
+      "Hakon Miller Williams é o rei de Hal, um homem de alta estatura e aparência imponente. Com cabelos grisalhos e castanhos, pardo, e olhos castanhos, ele governa seu reino com grande respeito e sabedoria.",
     race: "Humano",
     eyeColor: "Castanho",
     abilities: ["Liderança", "Sabedoria", "Força"],
@@ -543,9 +544,9 @@ export const characters: Character[] = [
     id: 51,
     name: "Iseu Miller Williams",
     shortDescription:
-      "Rei de Magnum, pele clara, cabelos dourados, olhos roxos, alta estatura e gótico.",
+      "Rei de Magnum, branco, cabelos dourados, olhos roxos, alta estatura e gótico.",
     fullDescription:
-      "Iseu Miller Williams, também conhecido como Iseu Castelo Silvestre, é o rei de Magnum. Com pele clara, cabelos dourados e olhos roxos, ele possui uma aparência gótica marcante e é um governante de alta estatura e grande poder.",
+      "Iseu Miller Williams, também conhecido como Iseu Castelo Silvestre, é o rei de Magnum. Branco, cabelos dourados e olhos roxos, ele possui uma aparência gótica marcante e é um governante de alta estatura e grande poder.",
     race: "Humano",
     eyeColor: "Roxo",
     abilities: ["Liderança", "Habilidade com Magia", "Força"],
@@ -556,7 +557,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Dinewings, alta estatura, branco, cabelos castanhos, olhos verdes.",
     fullDescription:
-      "David Miller Williams é o rei de Dinewings, um governante imponente com alta estatura, pele branca, cabelos castanhos e olhos verdes. Seu reinado é marcado por sua sabedoria e habilidades estratégicas.",
+      "David Miller Williams é o rei de Dinewings, um governante imponente com alta estatura, branco, cabelos castanhos e olhos verdes. Seu reinado é marcado por sua sabedoria e habilidades estratégicas.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Estratégia", "Liderança", "Sabedoria"],
@@ -567,7 +568,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Varahal, negro, cabelos pretos, olhos castanhos, barba grande, sobrancelhas notáveis, alta estatura.",
     fullDescription:
-      "Alexandre Miller Williams é o rei de Varahal, um homem de estatura alta e imponente. Ele possui pele negra, cabelos pretos, olhos castanhos, uma barba grande e sobrancelhas notáveis, sendo um líder respeitado em seu reino.",
+      "Alexandre Miller Williams é o rei de Varahal, um homem de estatura alta e imponente. Negro, cabelos pretos, olhos castanhos, uma barba grande e sobrancelhas notáveis, sendo um líder respeitado em seu reino.",
     race: "Humano",
     eyeColor: "Castanho",
     abilities: ["Liderança", "Sabedoria", "Força"],
@@ -578,7 +579,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Sarus, negro, cabelos castanhos, olhos verdes, sobrancelhas finas e grande barba, média estatura.",
     fullDescription:
-      "Afonse Miller Williams é o rei de Sarus, com pele negra, cabelos castanhos, olhos verdes e uma grande barba. Ele tem sobrancelhas finas e é de média estatura, mas sua presença é marcante e sua liderança, respeitada.",
+      "Afonse Miller Williams é o rei de Sarus, negro, cabelos castanhos, olhos verdes e uma grande barba. Ele tem sobrancelhas finas e é de média estatura, mas sua presença é marcante e sua liderança, respeitada.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Liderança", "Sabedoria", "Força"],
@@ -600,7 +601,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Largox, pardo, cabelos e olhos castanhos, média estatura, barba rala.",
     fullDescription:
-      "Tamur Miller Williams é o rei de Largox, com pele parda, cabelos e olhos castanhos e uma barba rala. Ele é de média estatura, mas sua habilidade como líder e sua presença são notáveis.",
+      "Tamur Miller Williams é o rei de Largox, com cabelos e olhos castanhos, pardo e uma barba rala. Ele é de média estatura, mas sua habilidade como líder e sua presença são notáveis.",
     race: "Humano",
     eyeColor: "Castanho",
     abilities: ["Liderança", "Sabedoria", "Força"],
@@ -611,7 +612,7 @@ export const characters: Character[] = [
     shortDescription:
       "Rei de Bonohills, estatura muito alta, pardo, cabelos e barba 'vermelhos' e olhos verdes.",
     fullDescription:
-      "Guilherme Miller Williams é o rei de Bonohills, de estatura muito alta e com pele parda. Seus cabelos e barba 'vermelhos' e olhos verdes são características marcantes. Ele é um líder respeitado e carismático.",
+      "Guilherme Miller Williams é o rei de Bonohills, de estatura muito alta e pardo. Seus cabelos e barba 'vermelhos' e olhos verdes são características marcantes. Ele é um líder respeitado e carismático.",
     race: "Humano",
     eyeColor: "Verde",
     abilities: ["Liderança", "Sabedoria", "Carisma"],
@@ -642,9 +643,9 @@ export const characters: Character[] = [
     id: 60,
     name: "David Miller Williams",
     shortDescription:
-      "Rei de Winescasteli, pele branca, olhos azuis, média estatura, ótimo estrategista, sempre um passo à frente.",
+      "Rei de Winescasteli, branco, olhos azuis, média estatura, ótimo estrategista, sempre um passo à frente.",
     fullDescription:
-      "David Miller Williams é o rei de Winescasteli, um estrategista brilhante conhecido por estar sempre um passo à frente. Com pele branca, olhos azuis e média estatura, ele é um líder que se destaca pela sua inteligência.",
+      "David Miller Williams é o rei de Winescasteli, um estrategista brilhante conhecido por estar sempre um passo à frente. Com olhos azuis, branco e média estatura, ele é um líder que se destaca pela sua inteligência.",
     race: "Humano",
     eyeColor: "Azul",
     abilities: ["Estratégia", "Liderança", "Inteligência"],
